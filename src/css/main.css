@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+:root {
+  --navy: #2e4374;
+  --silver: #7c81ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--navy);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container .pannel {
+  width: 100%;
+  border: 2px solid var(--silver);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.container .pannel .title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.container .pannel .score {
+  background: white;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container .pannel .score p {
+  color: #7c81ad;
+}
+
+.container .pannel .score .score_text {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.player_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.card_wrapper {
+  position: relative;
+  border-top: 0.6rem solid var(--silver);
+  width: 300px;
+  height: 300px;
+}
+
+.card_wrapper::before {
+  content: '';
+  position: absolute;
+  transform: rotate(-30deg);
+  transform-origin: top left;
+  width: 0.6rem;
+  height: 300px;
+  background-color: var(--silver);
+}
+
+.card_wrapper::after {
+  content: '';
+  position: absolute;
+  transform: rotate(30deg);
+  transform-origin: top right;
+  right: 0;
+  z-index: -1;
+  width: 0.6rem;
+  height: 300px;
+  background-color: var(--silver);
+}
+
+.result_pannel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}

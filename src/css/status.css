@@ -1,0 +1,28 @@
+.play_again {
+  text-align: center;
+  animation: reveal 1s ease;
+}
+
+@keyframes reveal {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.play_again .status {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.play_again .play_button {
+  padding: 10px 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

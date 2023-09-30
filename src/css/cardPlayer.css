@@ -1,0 +1,22 @@
+.card_player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+.card_player .name {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.card_player div {
+  transform: translateX(50%);
+}
+
+.card_player .card_container {
+  position: initial;
+}
